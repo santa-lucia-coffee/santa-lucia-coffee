@@ -1,0 +1,287 @@
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+            /**1rem= 10px**/
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.6rem;
+            line-height: 2;
+        }
+        /**Globales**/
+        
+        .contenedor {
+            max-width: 1200px;
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'PT Sans', sans-serif;
+        }
+        
+        h1 {
+            font-size: 4.8rem;
+        }
+        
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+        
+        h3 {
+            font-size: 3.2rem;
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        h4 {
+            font-size: 2.8rem;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        /**Utilidades**/
+        
+        .centrar-texto {
+            text-align: center;
+        }
+        
+        .no-margin {
+            margin: 0;
+        }
+        /** Grid **/
+        
+        @media (min-width: 768px) {
+            .grid {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .centrar-columnas {
+                justify-content: center;
+            }
+            .columnas-4 {
+                flex: 0 0 calc(33.3% - 1rem);
+            }
+            .columnas-6 {
+                flex: 0 0 calc(50% - 1rem);
+            }
+            .columnas-8 {
+                flex: 0 0 calc(66.6% - 1rem);
+            }
+            .columnas-10 {
+                flex: 0 0 calc(83.3% - 1rem);
+            }
+            .columnas-12 {
+                flex: 0 0 100%;
+            }
+        }
+        /**Header**/
+        
+        @media(min-width:768px) {
+            .barra {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        .site-header {
+            background-image: url(../img/prueba-de-header.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: inherit;
+            height: 60rem;
+        }
+        
+        .site-header a {
+            margin-top: 150px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .site-header h1 {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .site-header .menu {
+            margin-top: 100px;
+            background-color: #1f1003;
+            border: 1px solid #ffffff;
+            padding: 10px;
+        }
+        
+        .site-header .menu-pegado {
+            margin-top: 2rem;
+            background-color: #1f1003;
+            border: 1px solid #ffffff;
+            padding: 10px;
+        }
+        
+        .site-header .menu-pequeño {
+            padding: 0;
+            margin: 8rem;
+        }
+        
+        .site-header .menu:hover {
+            background-color: #ffffff;
+            color: #5e340b;
+        }
+        /**Navegación**/
+        
+        .navegacion a {
+            text-align: center;
+            display: block;
+            font-size: 1.8rem;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        @media (min-width: 768px) {
+            .navegacion a {
+                display: inline;
+                margin-right: 2rem;
+            }
+            .navegacion a:last-of-type {
+                margin: 0;
+            }
+        }
+        /** Texto Hwader**/
+        
+        .texto-header {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 45rem;
+        }
+        
+        @media (min-width: 768px) {
+            .texto-header {
+                margin-top: 10rem;
+            }
+        }
+        
+        .texto-header p {
+            font-size: 2.2rem;
+        }
+        /***Contenido Principal HOME**/
+        
+        .contenido-principal {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .blog,
+        .cursos {
+            flex: 0 0 100%;
+        }
+        
+        .cursos {
+            order: -1;
+        }
+        
+        .cursos h2 {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        @media (min-width: 768px) {
+            .contenido-principal {
+                justify-content: space-between;
+            }
+            .blog {
+                flex-basis: 66.6%;
+                order: -1;
+            }
+            .cursos {
+                flex-basis: calc(33.3% - 4rem);
+            }
+        }
+        /** Menu interno*/
+        
+        main h2 {
+            text-align: center;
+        }
+        
+        .lista-productos {
+            padding: 0;
+            list-style: none;
+        }
+        
+        .lista-productos li {
+            float: right;
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .lista-productos li:nth-child(2n+1) {
+            clear: both;
+        }
+        
+        @media (min-width: 768px) {
+            .lista-productos li {
+                width: 33.3%;
+            }
+            .lista-productos li:nth-child(2n+1) {
+                clear: unset;
+            }
+        }
+        /** Internas **/
+        
+        .imagen h1 {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .fa-whatsapp {
+            color: #ffffff;
+            background-color: #20b852;
+        }
+        
+        .fa-facebook-square {
+            background-color: #ffff;
+            color: #3b5998;
+            font-size: 4rem;
+            margin-top: 10rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        /*Footer*/
+        
+        .site-footer {
+            background-color: #000000;
+            padding: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .site-footer p {
+            color: #ffffff;
+            font-size: 4rem;
+            font-weight: 400;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        footer .texto-normal {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 2rem;
+        }
+        
+        .site-footer a {
+            border: 1px solid #ffffff;
+            padding: 1rem;
+        }
